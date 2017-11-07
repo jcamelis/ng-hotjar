@@ -4,11 +4,11 @@ node_js:
   - 6.11.5
 install: npm install
 script:
-  - npm version patch 
   - cd ./src && npm version patch && cd ..
   - "./build.sh"
 before_deploy:
   - cd dist
+  - git push origin --tags
 deploy:
   provider: npm
   email: jcamelis@gmail.com
@@ -16,6 +16,3 @@ deploy:
   tag: next
   api_key:
     secure: mdaSzh9A+2rIds/l++CwFCkIsM9+/FcTprhzVBiWgzFjyDZUnjqaDCP1wcTaG3WFVgsREPxzJpLbnFF2RJ3DMU8I8u/W8734BP33/cMhERGvP1+rRTeJO0FXHRAOWPBKQfVd1H/V2kDUTQ3NM9OFxhC8yNRLEGgOGzuLjSV8jBzM0WrTZBTECc7+eBjF4kbuVLemUB0CDxpi5yn/ipeGzOuQN1QIyrIsne/y75nvGee4LZgeQ9Os6ICxIu1bn34N4lYeMR2QCPXbKWq90AU7/31cRMkgKGf3W+2qfOg0izXFiD/KMkg0wDpB3sHmUJVy+pepuhdnXNwmeQ2BtV5FAt5juRUhWflGt7+Q3gN4nyiFoELtsj2yliINeIPTPtCQSwmqhTF7laUUkiKWWedtjym8sYWf8qAOJZ/IkbKeROKFN0UvyPHmOrKl+t8T9JDXvPn1Rjv8LqtXhsjZJS8i/ISHp0oVWbZEAsclIVZ7BPk0y0WCVVSjmDxqBNvqZ/2Boy5csb1GeUTHsBtcifqDeck+RcFxfViaz2WxXOSiwvjR7CvrycO0mgu7WgUS9tW4eUo9EHrQSFNv/vIgdDW6HR3Xh9EvXiRcb5jJrzNoVCJ1oAeR94HU1TJUnY4rh7v1zcfKdcp3Wp5Yw8szl79jx922zOgj8WGfKtSLihQQxZI=
-
-after_deploy:
-  - git push origin --tags
