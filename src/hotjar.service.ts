@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HotjarService {
-    
 
     public getInstance() {
         return window['hj'] = window['hj'] || this.getHotjarQueue();

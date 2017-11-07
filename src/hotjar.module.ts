@@ -8,6 +8,7 @@ import { HotjarService } from './hotjar.service';
 export * from './hotjar.service';
 
 export { HotjarConfig } from './hotjar.interface';
+export { HotjarConfigMap } from './hotjar.interface';
 
 @NgModule({
   declarations: [
