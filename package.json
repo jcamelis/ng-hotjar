@@ -1,6 +1,6 @@
 {
   "name": "ng-hotjar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Hotjar module for angular 2/4",
   "author": {
     "name": "Javier Camelis",
