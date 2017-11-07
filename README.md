@@ -1,4 +1,6 @@
+## Build Status
 
+![Travis Build Status](https://travis-ci.org/jcamelis/ng-hotjar.svg?branch=master)
 
 ## Install
 
