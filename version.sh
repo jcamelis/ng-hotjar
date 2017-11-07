@@ -1,6 +1,6 @@
 
-npm --no-git-tag-version version $1
+cd src && npm version $1
 
-git commit -am "project version update"
+git commit -am "project source version update"
 
-cd src && npm version $1 
+npm version $1 
