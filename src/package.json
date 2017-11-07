@@ -4,7 +4,7 @@
         "name": "Javier Camelis",
         "email": "jcamelis@gmail.com"
     },
-    "version": "0.0.12",
+    "version": "0.0.13",
     "license": "MIT",
     "module": "ng-hotjar.es5.js",
     "es2015": "ng-hotjar.js",
